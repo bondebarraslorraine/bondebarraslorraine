@@ -39,6 +39,7 @@ function holeEffect(){
     
 
 }
+/* EmailJS sender  */
 
 function sendMail(event){
     event.preventDefault();
