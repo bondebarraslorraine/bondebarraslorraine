@@ -1,5 +1,8 @@
 const holeService = document.getElementById("hole-service");
 const contactForm = document.getElementById("contact-form");
+const mailSucces = document.getElementById("mail-succes");
+const mailError = document.getElementById("mail-error");
+
 console.log("formulaire = ",contactForm);
 
 
@@ -50,7 +53,11 @@ function sendMail(event){
         .then(() => {
             console.log('Message Envoyé!');
             contactForm.reset();
+            contactForm.style.display = "none";
+            mailSucces.style.display = "block";
         }, (error) => {
+            contactForm.style.display = "none";
+            mailError.style.display = "block";
             console.log('Erreur Message non envoyé', error);
         });
 }

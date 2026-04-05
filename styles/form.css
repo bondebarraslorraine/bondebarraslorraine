@@ -131,6 +131,36 @@
 .mail-icon,.call-icon{
   width:8rem;
 }
+.call-icon{
+  animation: shake 1.5s infinite ;
+}
+.mail-icon{
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+
+@keyframes shake{
+  0%{
+    rotate:-20deg;
+  }
+  50%{
+    rotate:30deg;
+  }
+  100%{
+    rotate:-20deg;
+  }
+}
+@keyframes pulse{
+  0%{
+    transform: scale(1)
+  }
+  50%{
+    transform: scale(1.1)
+  }
+  100%{
+    transform: scale(1)
+  }
+}
 
 .form-button{
   background: rgb(244, 83, 83);
@@ -164,4 +194,12 @@
 
 .call-info.contact-call-info{
   min-width:80%;
+}
+
+.mail-succes{
+  display:none;
+}
+.mail-error{
+  color: red;
+  display:none;
 }
