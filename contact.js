@@ -46,7 +46,7 @@ function sendMail(event){
 
     let parameters =  {nom: nom, sujet: sujet, email: email, message : message};
 
-    emailjs.sendForm('service_x4lafkr', 'template_9l1zho6', contactForm)
+    emailjs.send('service_mzbse3d', 'template_6e7j0ho', parameters)
         .then(() => {
             console.log('Message Envoyé!');
             contactForm.reset();
