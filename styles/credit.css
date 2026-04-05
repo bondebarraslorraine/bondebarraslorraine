@@ -1,0 +1,45 @@
+.credit{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin:4rem;
+}
+.credit a{
+    text-decoration: none;
+    color:#165049;
+    margin:1rem;
+
+    font-size: 2rem;;
+}
+
+.credit a:hover{
+
+    background-color: rgb(206, 206, 206);
+}
+
+.intervention {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin:4rem;
+}
+
+.intervention h1{
+    text-decoration: none;
+    color:#165049;
+    margin:1rem;
+
+    font-size: 3rem;
+}
+.intervention p{
+    text-decoration: none;
+    color:#165049;
+    margin:1rem;
+
+    font-size: 2rem;
+}
+.city{
+    font-weight:600;
+}

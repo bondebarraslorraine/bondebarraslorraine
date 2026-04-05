@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <meta name="description" content="Contactez Bon Débarras pour obtenir un devis gratuit. Intervention rapide à Metz, Nancy, Thionville, Saint-Dié, Épinal, Colmar, Strasbourg.">
+    <meta name="keywords" content="contact débarras Lorraine, devis débarras maison, entreprise débarras Alsace, bon débarras téléphone, service de débarras rapide">
+    <meta name="robots" content="index, follow">
+    <title>Contactez Bon Débarras | Devis gratuit en Lorraine et Alsace</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/first.css">
+    <link rel="stylesheet" href="./styles/second.css">
+    <link rel="stylesheet" href="./styles/content.css">
+    <link rel="stylesheet" href="./styles/service.css">
+    <link rel="stylesheet" href="./styles/form.css">
+
+
+
+    <script src="index.js" defer></script>
+    <script src="contact.js" defer></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "dJo-lxnhpvMrRZRS7",
+            });
+        })();
+    </script>
+
+
+</head>
+<body>
+    <div class="main-content">
+
+    
+    
+        <div class="header" id="header">
+            
+            <a class="logo-link" href="index.html">
+                <img class="logo" id="logo" src="images/logo_bon-debarras-brut.svg" alt="Logo Bon Débarras">
+            </a>
+            
+            <div class="right-header">
+                <div id="navbar" class="navbar desactive">
+                    <a href="./index.html" id="navbar-link" class="navbar-link">Accueil</a>
+                    <a href="./service.html" id="navbar-link" class="navbar-link">Service</a>
+                    <a href="./contact.html" id="navbar-link" class="navbar-link">Contact</a>
+                    <img src="images/logo_bon-debarras-white.svg" alt="Logo Bon Débarras blanc">
+            </div>
+
+            <a class="title" id="title" href="contact.html">Contactez nous</a>
+            <img  id="menu" class="burger-icon" src="images/menu-2.png" alt="">
+        
+            </div>
+        </div>
+        
+
+       <div class="hole contact" id="hole-service">
+            <div class="slogan" data-aos="fade-right" data-aos-delay="250" data-aos-duration="1000">
+                <h1>Contactez nous</h1>
+            </div>
+        </div>
+
+        <div class="service-first contact-first">
+
+            <div class="accroche-large accroche-contact">
+                <h2>Un besoin ? Une question ? <br>Parlons-en.</h2>
+                <p data-aos="fade-right" data-aos-anchor=".slogan"   data-aos-duration="1000">Vous avez un <span>projet de débarras</span>, une <span>demande particulière</span> ou simplement besoin d’un <span>renseignement</span> ? <span>Notre équipe</span> est à votre <span>écoute</span> pour répondre à toutes vos <span>questions</span>, vous <span>conseiller</span> et vous proposer un <span>devis personnalisé, sans engagement</span>.</p>
+                <p data-aos="fade-left"   data-aos-duration="1000">Nous intervenons <span>rapidement</span>, avec <span>sérieux et discrétion</span>, sur <span>tous types de lieux et de volumes</span>. Que vous soyez un <span>particulier</span> ou un <span>professionnel</span>, nous sommes là pour vous <span>accompagner</span>.</p>
+            </div>
+
+            <div class="service-card contact" id="write" data-aos="fade-right"  data-aos-duration="500">
+                <h1 class="service-card-text-h1 form-text">Formulaire de contact</h1>
+                <div class="card-img-container contact-img" data-aos="fade-left"  data-aos-duration="1000">
+                    <img class="service-card-img contact-img" src="images/particulier-2.jpg" alt="Femme au milieu d'encombrants">
+                </div>
+                <div class="service-card-content form-card">
+                    <h2>Obtenez un devis rapide</h2>
+
+                <p data-aos="fade-right"  data-aos-duration="800"><span>Remplissez</span> simplement le <span>formulaire</span> ci-dessous : décrivez votre <span>besoin</span>, précisez le <span>type de local</span>, le <span>lieu de l’intervention</span>, et si possible, la présence <span>d’objets valorisables</span>. Nous vous recontactons <span>sous 24h</span> pour discuter de votre <span>projet</span> et convenir, si besoin, d’un <span>rendez-vous d’estimation</span>.</p>
+                
+                </div>
+                <div class="service-card-content form-card" data-aos="flip-right"  data-aos-duration="800">
+                    <form class="form-container" id="contact-form">
+                        <img alt="Icône mail de contact" class="mail-icon" src="images/mail.png">
+
+                        <label for="email">Votre e-mail ou téléphone</label>
+                        <input type="text" id="email" name="email" required placeholder="Ex: exemple@gmail.com"/>
+                        
+                        <label for="nom">Votre Nom</label>
+                        <input type="text" id="nom" name="nom" required placeholder="Ex: Mr Dupont"/>
+                          
+                        <label for="sujet">Objet de votre demande</label>
+                        <input type="text" id="sujet" name="sujet" placeholder="Ex: Débarrasser une cave"/>
+
+                        <label for="message">Message</label>
+                        <textarea type="text" rows="5" name="message" id="message" placeholder="Pour être rappelé rapidement, laissez votre téléphone !"></textarea>
+                            
+                        <button class="button form-button" type="submit">Envoyer</button>
+                    </form>
+    
+                </div> 
+         
+            </div>
+
+                <div class="first" style="background:url('images/svg-test.png')">
+                    <div class="pancarte call-pancarte" id="call" data-aos="zoom-in"  data-aos-duration="800">
+                    <img alt="Icône téléphone de contact" class="call-icon" src="images/phone-call.png">
+
+                    <h1>Ligne directe</h1>
+                    
+                    <div class="accroche">
+                        <span>Vous souhaitez joindre directement nos services ?</span>
+                        <br><br>
+                    </div>
+
+                    <div class="call-info contact-call-info">
+                        <span>Nos conseillers sont à votre écoute du lundi au samedi  de 10h à 19h</span><a class="call-button" href="tel:+33659842551">Appeler</a>
+                    </div>
+
+                    <div class="accroche">
+                        <h2>Besoin urgent ?</h2>
+                        <p>Nous pouvons parfois <span>intervenir sous 48h</span> selon les <span>disponibilités</span>. <span>Contactez-nous par téléphone</span> pour un <span>traitement prioritaire</span>.</p>
+                    </div>
+    
+                </div>
+        </div>
+        <footer>
+            <div class="contenu-footer">
+                
+                <div class="footer-part footer-services">
+                    <a href="./service.html"><h3>Services</h3></a>
+                    
+                    <h2 class="h-line"> </h2>
+                    <ul class="liste-services">
+                        <li><a href="service.html#locaux">▶ Débarras de locaux</a></li>
+                        <li><a href="service.html#equipements">▶ Enlèvement d'équipement</a></li>
+                        <li><a href="service.html#archives">▶ Enlèvement d'archives</a></li>
+                        
+                    </ul>
+
+                </div>
+                
+                <div class="footer-part footer-contact">
+                    <a href="./contact.html"><h3>Contact</h3></a>
+                    
+                    <h2 class="h-line"> </h2>
+                    <ul >
+                    <li><span >▶ 54000 Nancy, France</span></li>
+                    <li> ▶ <img style="width:1.5rem;" alt=""  src="images/phone-logo.png"><a style="color: white" href="tel:0659842551"> 06 59 84 25 51</a></li>
+                    <li><a href="contact.html#write">▶ Demander un devis</a></li>
+                    <li><a href="credit.html">▶ Mentions</a></li>
+                    </ul>
+                    
+                </div>
+                
+                <div class="footer-part footer-horaire">
+                    <h3>Horaires</h3>
+                    <h2 class="h-line"> </h2>
+                    <ul>
+                    <li>▶ Du lundi au samedi de 10h à 19h</li>
+                    </ul>
+                </div>
+                    
+                <div class="footer-part footer-media">
+
+                    <a href="index.html"><img class="logo-footer" src="images/logo_bon-debarras-white.svg" alt="Logo Bon Débarras blanc"></a>
+
+                    <div class="liste-media">
+                        <a href=""><img src="images/instagram-logo.png" alt="Logo instagram"/>   </a>
+                        <a href=""><img src="images/linkedin-logo.png" alt="Logo likedin"/>   </a>                   
+                        <a href=""><img src="images/facebook-logo.png" alt="Logo facebook"/>   </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <p style="margin-bottom:0px; color:white; text-align:center; font-size:1.5rem; padding-bottom:1rem;" >© www.bon-debarras.fr, Tous droits réservés.</p>
+        </footer>
+    </div>
+
+    
+</body>
+<script>
+    AOS.init({
+  once: true
+});
+</script>
+
+</html>

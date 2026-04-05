@@ -1,0 +1,302 @@
+.service-first{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    
+}
+
+/* Pancarte post acceuil */
+.accroche-large{
+    max-width: 70%;
+    text-align:center;
+    color:#165049;
+    font-weight: none;
+    font-size:1.5rem;
+    position:relative;
+}
+.second-accroche-large{
+    margin-top: 2rem;;
+}
+.accroche-large span{
+    font-weight: bold;
+    max-width: 100%;
+}
+
+.accroche-large h2::after{
+    position:absolute;
+    content:"";
+    width:8rem !important;
+    top:5px;
+    left: calc(50% - 4rem);
+    padding:2px;
+    background-color:#165049;
+
+}
+/* Fin*/
+
+/* Englobe le service-intro et  les service-card */
+.service-parts{
+    margin-top: 5rem;
+    
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    overflow-x: hidden;
+   
+}
+
+
+.service-intro{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+    width:90%;
+
+    margin: 3rem 5% 3rem 5% ;
+    padding: 5px;
+    box-sizing: border-box;
+    line-height: 2rem;    
+    overflow-x:hidden;
+}
+
+.intro-service-content{
+    color:rgb(234, 230, 230);
+    width :65%;
+    background: linear-gradient(90deg,#165049,#165049,  #41988e);
+    border-radius:1rem;
+    padding:1.5rem;
+}
+.intro-service-content legend,span{
+    font-weight:600;
+}
+
+
+.intro-service-content h1{
+    padding:1rem 0 0 1rem;
+    position:relative;
+}
+.intro-service-content h1::after{
+    padding:1rem 0 0 1rem;
+
+    content: "";
+    padding:1px;
+    width:15rem;
+    background-color: #ffffff;
+    position: absolute;
+    bottom:-1.5rem;
+    left:1.5rem;
+
+}
+
+.intro-service-content legend{
+    padding:0 0 0 1.5rem;
+    margin-top:3rem;
+}
+
+.intro-service-content p {
+    padding:1rem;
+    font-size:1.5rem;
+}
+
+.truck-contact{
+    width:100%;
+    
+}
+.intro-service-img{
+    display:flex;
+    justify-content: center;
+    width:30%;
+
+
+}
+
+.bande-service{
+    margin-top:4rem;
+}
+
+/* Partie card */
+.service-card{
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:5%;
+    margin-bottom:2rem;
+
+    margin:2rem;
+    border: 3px dashed #165049;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top:0;
+    overflow-x:hidden;
+}
+
+.second-service-card{
+    flex-wrap: wrap-reverse;
+}
+.second-service-card-button{
+    background: linear-gradient(45deg,#ffb300, #fdc951 , #ffe3a2);
+    color:#165049;
+    font-weight: bold;
+    flex-wrap: wrap-reverse;
+}
+
+.service-card-text{
+
+    width:45%;
+    background: none;
+    color:#165049;
+    box-sizing: border-box;
+    padding-bottom: 2rem;
+}
+.service-card-text-h1{
+    font-size:3rem ;
+    position:relative;
+    margin-bottom: 5rem;
+}
+.service-card-text-h1::after{
+  content: "";
+  padding:2px;
+  width:10rem;
+  background-color: #165049;
+  position: absolute;
+  bottom:-1rem;
+  left:0rem;
+}
+
+.card-img-container{
+    width:48%;
+    
+}
+
+.service-card-img{
+    width:100%;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.service-card-content{
+    text-align:left;
+    color:#165049;
+    font-weight: none;
+    font-size:1.5rem;
+    
+    margin-bottom:4rem;
+    
+}
+.service-card-content span{
+    font-weight:bold;
+}
+
+.bottom-slogan-service{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    margin:2rem;
+    margin-bottom:5rem;
+}
+
+.ecrito-bottom-service{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    border:0px solid #165049;
+    border-radius:1rem;
+
+    background: url("../images/svg-20.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+    box-shadow: 2px 2px 2px 2px rgba(44, 42, 42, 0.75);
+    background-color:#165049;
+
+}
+.ecrito-bottom-service p{ 
+    max-width:50rem;
+    width:85%;
+    padding:2rem;
+    text-align: justify;
+    font-size:1.5rem;
+    
+    color:#165049;
+    color:rgb(222, 231, 227);
+    position: relative;
+    line-height:2rem;
+    
+}
+.ecrito-bottom-service span{
+    font-weight:bold;
+}
+
+.ecrito-bottom-service img{ 
+    
+    width:12rem !important;
+    background-color: rgb(222, 231, 227);
+    border-radius: 100rem;
+    
+
+}
+.ecrito-bottom-service p::before{
+  content: "";
+  padding:2px;
+  width:20rem;
+  background-color:rgb(222, 231, 227);
+  position: absolute;
+  top:-1rem;
+  left:calc(50% - 10rem);
+  text-align: center;
+  margin-top:1rem;
+  box-shadow: 0px 3px 10px black;
+}
+
+.ecrito-bottom-service h1{
+    position:relative;
+    color:#165049;
+    color:rgb(222, 231, 227);
+    font-size:3.5rem;
+    text-align: center;
+    color:#165049;
+}
+
+
+@media(min-width: 1001px){
+    .service-card-img{
+        object-fit: cover;
+        object-position: center;
+        width:100%;
+        height:35rem;
+    }
+}
+
+@media(max-width:1000px){
+    .service-card-text{
+        background-color: white;
+        width:90%;
+        background: none;
+    }
+    .card-img-container{
+        width:90%
+    }
+
+    .intro-service-content{
+        width :100%;
+    }
+
+    .intro-service-img{
+        width:30rem;
+    }
+    
+
+}
+
+@media(min-width:700px){
+    .ecrito-bottom-service p{ 
+        width:60% !important;
+    }
+}

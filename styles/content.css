@@ -1,0 +1,125 @@
+
+.content-parts {
+  margin-bottom:5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  
+
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:85rem;
+  max-width: 90%;
+  background-color: white;
+  align-items:flex-start; /* garde les hauteurs alignées */
+  border: 5px dashed #165049;
+
+  border-radius: 1rem;;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  box-sizing: border-box;
+  background-color:white;  
+  overflow-x:hidden;
+  
+
+
+}
+
+.contact-title{
+  text-align: center;
+  font-size:6rem;
+  color:#165049;
+  color:white;
+}
+
+.content-part{
+
+  width:35rem;
+  height:auto;
+  max-width: 90%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:0px;
+  align-self: flex-start;
+  padding-top: 0;
+  padding-bottom: 0;
+
+
+}
+
+.content-part p{
+  font-size:1.3rem;
+  padding-left: 3rem; 
+  padding-right: 3rem; 
+  color:#165049;
+
+  text-align: center;
+  line-height: 1.7;
+    
+  margin-top: 2rem;
+  padding-top: 0;
+  margin-bottom: 5rem;
+  width:35rem;
+          
+}
+.content-part-h1{
+
+  padding-left:2rem;
+  padding-right:2rem;
+  text-align:center;
+  margin-bottom: 2rem !important;
+  padding-bottom: 0px !important;
+  font-size:2.5rem; color:#0a5c4e;
+
+}
+.content-part-h1::before{
+    position:absolute;
+    content:"";
+    width:15rem;
+    top:9rem;
+    left: calc(50% - 7.5rem);
+    padding:2px;
+    background-color:#165049;
+    border-radius: 2rem;
+
+}
+.content-part span{
+  font-weight:bold;
+}
+.h-line-title{
+  width:80%; 
+  text-align:center; 
+  font-size:3rem; 
+  color:#165049;
+}
+.h-line-title::after{
+    position:absolute;
+    content:"";
+    width:24rem !important;
+    bottom:-1.5rem;
+    left: calc(50% - 12rem);
+    padding:2px;
+    background-color:#165049;
+    border-radius: 2rem;
+}
+.content-part img{    
+  max-width: 100%;
+  height:auto;
+  clip-path: polygon(0 5%, 100% 10%, 100% 85%, 0 95%);
+  
+
+
+
+    
+}
+.h-l-content{
+  background-color: black;
+  text-align: center !important;
+
+  width:80%;
+  margin: 0;
+}

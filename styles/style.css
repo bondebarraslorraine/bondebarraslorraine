@@ -1,0 +1,740 @@
+html{
+    font-size: 14px;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    scroll-behavior: smooth; /*Pour que le scroll soit dou lors du lien*/
+    
+}
+html, body {
+}
+
+a,button {
+    text-decoration: none !important;
+}
+
+a:hover,button:hover{
+    filter: brightness(0.8);
+}
+.shadow:hover{
+    filter: brightness(1.5);
+}
+.second-service-card-button:hover{
+    filter: brightness(0.8);
+}
+.logo-link:hover{
+    opacity:0.6;
+}
+body{
+    margin-left: 0px;
+    margin-right: 0px;
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 0;
+}
+.body-unscroll{
+    overflow: hidden !important;
+}
+
+.nav-scroll{
+    overflow: scroll;
+}
+
+footer{
+    flex-shrink: 0;
+    width:100vw;
+    background-color: #165049;
+    background: linear-gradient(90deg,#165049,#165049,  #41988e);    
+    overflow-x: hidden;
+}
+.contenu-footer{
+
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    flex:1 0 auto;
+    width:100vw;
+    gap:2rem;
+    
+    
+}
+.footer-part{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+
+    color:white;
+    max-width: 20rem;
+    line-height: 2.5rem;
+
+}
+.footer-part ul{
+    list-style-type: none;
+    padding: 0;
+
+}
+.footer-part a {
+    text-decoration: none;
+    color:black;
+    color:white;
+
+}
+.footer-part li {
+
+    margin: 0.4rem;
+    font-size: 1.4rem;
+
+}
+.h-line{
+    margin:1rem;
+    background: white;
+    width:5rem;
+    height:2px;
+    overflow-x:hidden;
+}
+.footer-part h3 {
+
+    margin-bottom: 0rem;
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+
+.footer-part img{
+    width:3rem;
+}
+
+
+.liste-media{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+ 
+}
+.footer-media{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    /*grow shrink basis*/
+    flex: 1 0 auto;
+    min-height: 50vh;
+}
+
+
+.logo-footer{
+    width:12rem !important;
+    color:white;
+}
+
+.bande{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    
+    font-size:2rem;
+    padding-top:1.5rem;
+    padding-bottom:1.5rem;
+
+    font-weight:600;
+    color:#ffffff;
+
+    background: linear-gradient(45deg,#9cd0ca, #165049 , #9cd0ca);
+    width:100%;
+    border-radius: 2px;
+    margin-top: 0px;
+    overflow-x:hidden;
+}
+.bande-header{
+    background: linear-gradient(0deg,#ffd77b, #ffffff, #fff1c9 ) !important;
+    box-shadow: none;
+    color:#165049;
+    
+}
+
+
+
+.bande.bottom{
+    
+    margin-top:0px;
+    background:#165049;
+    box-shadow: none;
+    background: linear-gradient(90deg,#41988e,#165049,  #41988e);
+        
+
+
+}
+.bande.yellow{
+    font-weight:bold;
+    font-size:2.5rem;
+    color: #134640;
+    background: linear-gradient(45deg, #fffae8,#ffa10b, #ffffff);
+    width:100%;
+    box-shadow: 2px 2px 3px rgba(44, 42, 42, 0.75);
+}
+
+.header{
+    width: 100%;
+    height:90px;
+    
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    top:0px;
+    left:0;
+    position:fixed;
+    z-index: 1000;   
+    max-width: 100%; 
+    transition: all 0.3s ease;
+   
+}
+.header-visible{
+    background-color: #ffb703; 
+    background: linear-gradient(45deg, #f2c145, #ffb703,#ffa10b );
+
+    box-shadow: 2px 2px 30px rgba(44, 75, 38, 0.75);
+
+}
+.right-header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+
+    
+
+}
+.title{
+    position:absolute;
+    right:13vw;;
+    padding:10px;
+    padding-right:24px;
+    padding-left:24px;
+    
+    color:white;
+    margin-left:5px;
+    margin-right:5px;
+    font-size: 1.2rem;
+
+
+    border-radius:5px;
+    background: none;
+    font-weight: 700;
+    box-shadow: 2px 2px 30px rgba(44, 75, 38, 0.75);
+    background: linear-gradient(90deg,#165049,#165049,  #41988e);
+    transition: all 0.5s ease;
+    display: none;
+
+}
+.title-visible{
+    display: block; 
+}
+.title:active{
+    margin-left:32px;
+    padding:9px;
+    padding-right:23px;
+    padding-left:23px;
+}
+.desactive{
+    left: -2000px;
+    transition: left 0.5s ease;
+    }
+.active{
+    left: 0 !important;
+    transition: left 0.5s ease;
+    
+}
+.navbar.active{
+    justify-content: flex-start;
+    padding-top:12rem;
+    gap:1rem;
+
+    background: url("../images/menu-demenagement.jpg");
+    background-position: bottom;
+    background-size: 150%;
+    background-repeat:no-repeat;
+
+
+
+
+}
+.navbar.active a{
+    font-size:3rem !important;
+    color:rgb(240, 234, 234);
+    text-shadow: 0px 3px 20px black;
+    filter: brightness(2);
+}
+.navbar.active a{
+    
+    filter: brightness(2);
+}
+
+.navbar.active .logo{
+    width:1rem !important;
+}
+.navbar.desactive{
+    background-color:none !important;
+}
+.navbar.desactive img{
+    display:none;
+    background-color:none !important;
+}
+
+.navbar img{
+    margin-top:0rem;
+    width:20rem;
+}
+
+.burger-icon{
+    width: 4rem;
+    left:0px;
+
+    margin:5px;
+    padding-right:1rem;
+
+    margin-bottom:0.3rem;
+    display: none;
+    z-index:3000;
+
+}
+.burger-icon:hover{
+    cursor: pointer;
+}
+.logo{
+    width: 12rem;
+    padding-top:3rem;
+    margin-left:0px;
+    z-index: 3000;
+    transition: all 0.8s ease;
+
+}
+.logo-visible{
+    width: 7rem;
+    padding-top:0;
+    margin-left:0px;
+
+}
+.logo-link{
+    margin-left:0px !important;
+    z-index:3000;
+}
+.header a {
+    text-decoration:none;
+    margin-left:30px;    
+    margin-right:30px;    
+}
+.navbar a {
+    text-decoration:none;
+    font-weight: bold;
+    font-size: 1.3rem;
+
+    padding: 0.15rem;
+    padding-left:0.8rem;
+    padding-right:0.8rem;
+    margin:15px;
+}
+.navbar-link {
+    
+    color:white;
+    color:#080808;
+    text-shadow: 3px 8px 20px white;
+    font-size: 1.7rem !important;
+    position:relative;
+    
+}
+.navbar.active a::after{
+    content:none;
+}
+.navbar.active a::before{
+    content:none;
+}
+.navbar.active a:hover{
+    color:rgb(0, 0, 0) !important;
+    text-shadow: 3px 8px 20px white;
+}
+
+.navbar-link::after{
+    content:"";
+    position:absolute;
+    width:1rem;
+    padding:3px;
+    background-color:#000000;
+
+    bottom:-0.5rem;;
+    left:12%;
+    transition: all 0.5s;
+    border-radius:2px;
+}
+
+.navbar-link::before{
+    content:"";
+    position:absolute;
+    width:1rem;
+    padding:3px;
+    background-color:#000000;
+
+    top:-0.5rem;;
+    right:12%;
+    transition: all 0.5s;
+    border-radius:2px;
+}
+
+.navbar-link:hover::after{
+    width:5.5rem; 
+}
+.navbar-link:hover::before{
+    width:5.5rem; 
+}
+.navbar-link-visible::after{
+    background-color:#144839;
+}
+.navbar-link-visible::before{
+    background-color:#144839;
+}
+
+.navbar-link-visible {
+    text-shadow:none;
+    color: #144839;
+}
+
+.hole{
+   
+
+    min-height: 100vh;
+    max-height: 950px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 0px;
+
+    background: url("../images/demenagement-hq-2.jpg");
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    will-change: transform;
+    overflow-x:hidden;
+}
+.hole.service{
+    background: url("../images/boutique-hq-2.jpg");
+    background-position: center center;
+    background-attachment: scroll;
+    
+    background-size: 250%;
+    background-repeat: no-repeat;
+    will-change: transform;
+    min-height: 50vh;
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
+
+}
+
+.hole.contact{
+    background: url("../images/call-2.jpg");
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    will-change: transform;
+    min-height: 80vh;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.hole-service-bottom{
+    background: url("../images/espace.jpg") ;
+    min-height: 50vh;
+    
+    background-repeat: no-repeat;
+    background-attachment:scroll ;
+    background-size: 150% !important;
+    clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-position: center center ;
+    will-change: transform;
+
+}
+
+
+.parallax{
+    background-color:#165049;
+    
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 250%;
+    background-repeat: no-repeat;
+     will-change: transform;
+    margin-bottom: 0px;
+
+    z-index:-1; /*Sinon la bande est dèrrière*/
+    
+    /* positionne le bloc manuellement, indépendamment du reste  , mais n'a pas de taille par défaut d'où : top: 0; left: 0; right: 0; bottom: 0;*/
+    position:absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    will-change: transform;
+    margin-bottom: 0px;
+    
+
+
+
+    
+
+}
+.slogan{
+    display: flex;
+    margin-left:8vw;
+    
+    
+    flex-direction: column;
+    justify-content: flex-start;
+    will-change: transform;
+
+}
+.slogan.sub-slogan{
+    margin-left:3vw;
+}
+.slogan p{
+    color:#ffffff;
+    font-size:2rem;
+    max-width: 80%;
+    text-shadow: 3px 8px 20px #0a0808;
+
+    font-weight:bold;
+    margin-bottom: 3rem;
+    will-change: transform;
+
+}
+.slogan h1{
+
+    color:#ffffff;
+    font-size:12rem;
+    max-width: 80%;
+
+    text-shadow: 3px 8px 20px #0a0808;
+    margin-top:100px;
+    margin-bottom: 3rem;
+    opacity: 1;
+    margin-bottom: 0px;
+    will-change: transform;
+    
+}
+
+@media(min-width:1900px){
+    html{
+        font-size: 18px;
+    }
+}
+@media(min-width:1150px){
+    .pancarte{
+        margin-bottom:3rem;
+    }
+    .hole{
+        background: url("../images/demenagement-hq.jpg");
+        background-size: 180%;
+    
+        background-position: center center;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        will-change: transform;
+    }
+    .hole.service{
+        background-size: 150%;
+        min-height: 70vh;
+    }
+    .hole-service-bottom{
+        background-size: 100% !important;
+    }
+
+}
+
+@media(max-width:1149px){
+    .home-worker{
+        margin-top:5rem;
+        min-width:80%;
+    }
+
+     .footer-part{
+        flex-wrap: wrap;
+        width:100vw;
+        max-width: 100vw;
+        align-items: center;
+        text-align: center;
+
+    }
+    .contenu-footer{
+        gap:0;
+    }
+    .footer-part li {
+        max-width: 24rem;
+    }
+    
+
+}
+@media(min-width:1000px){
+    .slogan p{
+        max-width: 70%;
+
+    }
+    .title{
+        position:absolute;
+        right:30rem;
+    }
+}
+@media(max-width:1000px){
+    html{
+        font-size:13px;
+        
+    }
+    .slogan h1{
+        font-size:9rem;    
+    }
+
+    .navbar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+
+        margin-right:20px;
+        padding-top:2rem;
+        top: 0px;
+        bottom:0;
+        
+    }
+    .navbar a{
+    margin-bottom:40px;
+    }
+    .burger-icon{
+        display: block;
+    }
+     .hole{
+        background-size: 150%;
+    }
+    
+    .hole.contact{
+        background-size: 180%;
+    }
+
+
+}
+@media(max-width:800px){
+    .hole{
+        background-size: 250%;
+    }
+    .hole-service-bottom{
+        background-size: 200% !important;
+        min-height: 40vh;
+
+    }
+    .slogan h1{
+        font-size:6rem;    
+    }
+
+
+    .hole.contact{
+        min-height: 60vh;
+    }
+    .navbar.active{
+    
+    background-size: 200%;
+    }
+}
+/*Gestion des petits écran (iphone SE) */
+@media(max-width:500px){
+    html{
+        font-size:12px;
+    }
+    .slogan h1{
+        font-size:6rem;    
+    }
+}
+
+@media(max-width:400px){
+    html{
+        font-size:10px;
+    }
+    .slogan h1{
+        font-size:6rem;    
+    }
+    
+}
+
+.button{
+    max-width:11rem;
+    padding:16px;
+    padding-right:30px;
+    padding-left:30px;
+    margin-top:5px;
+    margin-left:5px;
+    margin-right:5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+
+
+    border-radius:2px;
+
+    background: linear-gradient(45deg,#ffb300, #fdc951 , #ffe3a2);
+    color:#165049;
+    cursor: pointer;
+    margin-bottom:20px;
+    box-shadow: 2px 2px 2px 2px rgba(44, 42, 42, 0.75);
+}
+
+.button:active{
+    margin-top: 7px ;
+    margin-left:9px;
+    margin-right:7px;
+    padding:15px;
+    padding-right:28px;
+    padding-left:28px;
+    transition: O.5s;
+    box-shadow: none;
+
+}
+
+.shadow{
+    
+    padding-top:6px;
+    padding-bottom:6px;
+    padding-left:13px;
+    padding-right:13px;
+    border-radius:1px;
+
+
+    background: linear-gradient(90deg,#165049,#165049,  #41988e);  
+    border-radius:0px;
+    /* opacity:0.8; */
+    cursor:pointer;
+    color:white;
+
+    transition: opacity 0.3s;
+    transition:box-shadow 0.2s;
+
+    box-shadow: 2px 2px 3px rgba(39, 37, 37,0.75);
+    margin-bottom:5px;
+    font-size: 1.5rem;
+}
+.shadow:hover{
+    
+    opacity:0.8;
+}
+.shadow:active{
+    margin-top: 2px;
+    margin-left: 2px;
+    box-shadow:none;
+    opacity:0.8;
+}
+
