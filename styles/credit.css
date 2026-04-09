@@ -1,45 +1,85 @@
-.credit{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    margin:4rem;
-}
-.credit a{
-    text-decoration: none;
-    color:#165049;
+.credit {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444;
+    background: #f8f8f8;
+    border-left: 4px solid #075848;
+    border-radius: 6px;
     margin:1rem;
-
-    font-size: 2rem;;
+    
+    margin:auto;
+    margin-top: 2rem;
 }
 
-.credit a:hover{
+.credit a {
+    display: block;
+    color: #075848;
+    text-decoration: none;
+    margin-bottom: 6px;
+    transition: 0.2s ease;
+}
 
-    background-color: rgb(206, 206, 206);
+.credit a:hover {
+    text-decoration: underline;
+    color: #0a7b63;
+}
+
+.credit .icon {
+    margin-top: 15px;
+    padding-top: 10px;
+}
+
+.credit .icon a {
+    display: inline-block;
+    margin-right: 8px;
 }
 
 .intervention {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    margin:4rem;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 10px 15px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #333;
 }
 
-.intervention h1{
-    text-decoration: none;
-    color:#165049;
-    margin:1rem;
-
-    font-size: 3rem;
-}
-.intervention p{
-    text-decoration: none;
-    color:#165049;
-    margin:1rem;
-
+.intervention h1 {
     font-size: 2rem;
+    color: #075848;
+    margin-bottom: 20px;
+    text-align: left;
 }
-.city{
-    font-weight:600;
+
+.intervention p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+/* Liste des villes */
+.intervention .city {
+    font-size: 0.95rem;
+    color: #333;
+    padding: 15px;
+    background: #f4fdfb;
+    border-left: 4px solid #0a7b63;
+    border-radius: 5px;
+    line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .credit, .intervention {
+        padding: 15px;
+    }
+
+    .intervention h1 {
+        font-size: 1.6rem;
+    }
+
+    .intervention .city {
+        font-size: 0.9rem;
+    }
 }
