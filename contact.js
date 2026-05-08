@@ -3,7 +3,6 @@ const contactForm = document.getElementById("contact-form");
 const mailSucces = document.getElementById("mail-succes");
 const mailError = document.getElementById("mail-error");
 
-console.log("formulaire = ",contactForm);
 
 
 window.addEventListener("scroll",holeEffect);
@@ -52,7 +51,6 @@ function sendMail(event){
 
     emailjs.send('service_mzbse3d', 'template_6e7j0ho', parameters)
         .then(() => {
-            console.log('Message Envoyé!');
             contactForm.reset();
             contactForm.style.display = "none";
             mailSucces.style.display = "block";

@@ -37,7 +37,6 @@ function manageResize(){
         }
         
         slided = false;
-        console.log("Navbar : Menu désactivé");
 
     }
     
@@ -69,7 +68,6 @@ function menuSlide(){
         }
 
         slided = false;
-        console.log("Menu désactivé");
     }
 
 }

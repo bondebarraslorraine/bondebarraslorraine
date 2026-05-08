@@ -9,29 +9,25 @@ cookiesaccept.addEventListener("click",acceptcookies);
 cookiesrefuse.addEventListener("click",refusecookies);
 
 const cookies = getCookie("cookies");
-console.log("Cookies",cookies);
+// console.log("Cookies",cookies);
 function undisplayCookie(){
     maincontent.classList.remove("blured");
     cookiesdiv.classList.remove("diplay-cookies");
 }
 
-if(cookies){
-    console.log("cookies");
-    
-}
 if(cookies == ""){
     maincontent.classList.add("blured");
     cookiesdiv.classList.add("diplay-cookies")
-    console.log("blured content");
+    // console.log("blured content");
 }
 if(cookies == "accepted"){
     undisplayCookie();
     loadGTM();
-    console.log("Hey Accepted");
+    // console.log("Cookies Accepted");
 }
 if(cookies == "refused"){
     undisplayCookie();
-    console.log("Hey Refused");
+    // console.log("Cookies Refused");
 }
 
 
@@ -39,17 +35,17 @@ if(cookies == "refused"){
 function acceptcookies(){
     managecookies("cookies","accepted",100);
     loadGTM();
-    console.log("Button clicked",document.cookie);
+    // console.log("Button clicked",document.cookie);
 }
 function refusecookies(){
     managecookies("cookies","refused",100);
-    console.log("Button clicked",document.cookie);
+    // console.log("Button clicked",document.cookie);
 }
 
 function managecookies(cname,cvalue,exdays){
     setCookie(cname, cvalue, exdays);
     undisplayCookie();
-    console.log("cookies managed");
+    // console.log("cookies managed");
 }
 
 

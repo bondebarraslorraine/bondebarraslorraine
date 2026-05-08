@@ -12,7 +12,6 @@ function updatePicture(){
     holeServiceBottom.style.backgroundPosition = `center calc(50% - ${window.scrollY * scrollRate}px) `;
 
     uptaded = false;
-    console.log("holeService",holeService)
 }
 
 function holeEffect(){
